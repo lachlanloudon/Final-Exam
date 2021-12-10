@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>How-to: PHP-based Web Production</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+</head>
+<body>
+	<h1>How-to: PHP-based Web Production</h1>
+	<h5>Amazon Lightsail and WordPress Tutorial</h5>
+	<iframe width="800" height="500" src="https://www.youtube.com/embed/upZOhKhefAs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<p><i>YouTube, Amazon Web Services</i></p>
+
+
+	<h2>Why PHP?</h2>
+	<p>
+		Why would you choose PHP for your web development project? Well, first, it's very user-friendly and easy to utilize. If you are a large company with employees, then this method will be best for getting new workers acclimated with the interface. The language of PHP allows programmers to get off to a quick start.
+	</p>
+	<p>
+		For the sake of this walkthrough, we will look at WordPress. The methodology should be relatively similar for other PHP-based web interfaces, though. Before you can do anything, you need to have a domain. Amazon Lightsail is a great web service that we reccommend for your projects.
+	</p>
+	<h2>Amazon Lightsail</h2>
+	<p>Once you have your account set up, create an instance in Lightsail.</p>
+	<img class="col-10" src="pic1.png">
+	<p><i>Image from Amazon Web Services</i></p>
+	<p>
+		From here, it will ask you some basic information about your region and availability zone. Then, select your platform and "WordPress" as the blueprint. It will then prompt a payment request, where you can select whichever plan suits your website needs. Finally, you can now name your instance and create it.
+	</p>
+	<p>
+		Now, you're going to select the boxy, orange SSH icon. Once the SSH window opens (it should read "Bitnami" at the top) then you can enter the following command into the window to get your password:
+
+		<div class="card border-success mb-3" style="max-width: 200rem;">
+			<div class="card-body">
+				<p class="text-success">cat $HOME/bitnami_application_password</p>
+			</div></div>
+	</p>
+	<p>
+		Your password should pop up now. Below is an example of where you could find it. Copy and paste it somewhere in your notes for later.
+	</p>
+		<img class="col-10" src="https://d9yljz1nd5001.cloudfront.net/en_us/cfce075edeb48e7ab19525822b2c91fc/images/amazon-wordpress-tutorial-06.png">
+		<p><i>Image from Amazon Web Services</i></p>
+	<h2>Setting Up WordPress</h2>
+	<p>
+		Here's the part you've been waiting for. To get onto WordPress, paste the following link into your browser:
+		<div class="card border-success mb-3" style="max-width: 200rem;">
+			<div class="card-body">
+				<p class="text-success">http:// [IP Address Here] /wp-login.php</p>
+			</div></div>
+		Once you reach the link, you should see a login screen for WordPress. For the username, type "user" and for the password, paste the password you saved earlier.
+	</p>
+	<img class="col-10" src="pic2.png">
+	<p><i>Image from WordPress.org</i></p>
+	<p>
+		Congratulations! You should be able to access your WordPress website and fully customize your new PHP-based web application. Your website will also allow others to visit it on the World Wide Web.
+	</p>
+	<img class="col-10" src="https://media4.giphy.com/media/5GoVLqeAOo6PK/200.gif">
+	<p><i>From Giphy.con</i></p>
+<footer>
+	<p>Property of Lachlan C. Loudon</p>
+</footer>
+
+	</body>
+	</html>
